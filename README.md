@@ -28,6 +28,7 @@ This repository contains Node.js sample projects covering typical combinations o
 cd nextjs-npm
 nvm use  # or: fnm use
 npm install
+npm run lint
 npm test
 ```
 
@@ -47,6 +48,7 @@ npm test
 corepack enable  # one-time setup, activates yarn via Node.js corepack
 cd nextjs-yarn
 yarn install
+yarn lint
 yarn build
 ```
 
@@ -65,6 +67,7 @@ yarn build
 cd nestjs-node-version
 nodenv install  # or: fnm install
 npm install
+npm run lint
 npm test              # unit tests
 npm run test:e2e      # E2E tests
 ```
@@ -89,6 +92,7 @@ npm run test:e2e      # E2E tests
 cd nestjs-cats-app
 asdf install  # or: mise install
 npm install
+npm run lint
 npm test              # unit tests
 npm run test:e2e      # E2E tests
 ```

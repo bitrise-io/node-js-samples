@@ -1,8 +1,8 @@
-import { Test } from '@nestjs/testing';
-import { CatsService } from './cats.service';
-import { Cat } from './interfaces/cat.interface';
+import { Test } from "@nestjs/testing";
+import { CatsService } from "./cats.service";
+import { Cat } from "./interfaces/cat.interface";
 
-describe('CatsService', () => {
+describe("CatsService", () => {
   let catsService: CatsService;
 
   beforeEach(async () => {
@@ -13,13 +13,13 @@ describe('CatsService', () => {
     catsService = moduleRef.get<CatsService>(CatsService);
   });
 
-  describe('findAll', () => {
-    it('should return an array of cats', async () => {
+  describe("findAll", () => {
+    it("should return an array of cats", async () => {
       const result = [
         {
-          name: 'Frajola',
+          name: "Frajola",
           age: 2,
-          breed: 'Stray',
+          breed: "Stray",
         },
       ];
       //@ts-ignore
@@ -29,12 +29,12 @@ describe('CatsService', () => {
     });
   });
 
-  describe('create', () => {
-    it('should add a new cat', async () => {
+  describe("create", () => {
+    it("should add a new cat", async () => {
       const cat: Cat = {
-        name: 'Frajola',
+        name: "Frajola",
         age: 2,
-        breed: 'Stray',
+        breed: "Stray",
       };
       const expectedCatArray = [cat];
       //@ts-ignore
