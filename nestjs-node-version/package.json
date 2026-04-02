@@ -1,8 +1,9 @@
 {
-  "name": "nest-typescript-starter",
+  "name": "nestjs-node-version",
   "version": "1.0.0",
-  "description": "Nest TypeScript starter repository",
+  "description": "NestJS sample application demonstrating REST API with guards, pipes, interceptors, and E2E testing",
   "license": "MIT",
+  "packageManager": "npm@11.9.0",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
